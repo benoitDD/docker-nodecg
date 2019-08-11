@@ -1,0 +1,7 @@
+TODO:
+    A Interface/Graphic for handle the templates (CRUD)
+    Template can inherit other template(s)
+        1 template = 
+            Template with extends
+            Template without extends (generete when server start ? or whenever users update templates ?)
+                To ease the template's validation by server

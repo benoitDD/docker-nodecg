@@ -1,0 +1,16 @@
+One route {
+    name: "PACKAGE_NAME"
+    doc: "a doc"
+    pages: [{
+        name: "PAGE_NAME"
+        graphics: [{
+            name: "GRAPHIC_NAME"
+        }],
+        actions: ['run', 'stop']
+    }]
+}
+
+TODO
+    remove graphics in route ? (above)
+    A Interface/Graphic for handle the route (CRUD)
+        action per default: 'run' and 'stop'

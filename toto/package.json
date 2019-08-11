@@ -1,0 +1,57 @@
+{
+	"name": "toto",
+	"version": "0.0.0",
+	"description": "All packages -> pages -> graphics",
+	"author": {
+		"name": "benoitDD",
+		"email": "benoitdegorsas@outlook.fr"
+	},
+	"files": [
+		"graphics",
+		"extension"
+	],
+	"nodecg": {
+		"compatibleRange": "^1.1.1",
+		"mount": [
+			{
+			  "directory": "public",
+			  "endpoint": "public"
+			}
+		],
+		"graphics": [
+			{
+				"file": "basic/basic.html",
+				"width": 1000,
+				"height": 500
+			},
+			{
+				"file": "social-network/facebook.html",
+				"width": 1000,
+				"height": 500
+			},
+			{
+				"file": "social-network/twitter.html",
+				"width": 1000,
+				"height": 500
+			},
+			{
+				"file": "social-network/instagram.html",
+				"width": 1000,
+				"height": 500
+			}
+		]
+	},
+	"repository": "https://github.com/nodecg/nodecg.git",
+	"license": "Apache-2.0",
+	"dependencies": {},
+	"devDependencies": {
+		"body-parser": "^1.19.0",
+		"cheerio": "1.0.0-rc.3",
+		"express": "^4.17.1",
+		"parcel": "1.12.3"
+	},
+	"scripts": {
+		"fill-graphics": "node conf/fillGraphics.js",
+		"build": "parcel src/index.js --out-dir public --public-url /bundles/toto/public/"
+	}
+}

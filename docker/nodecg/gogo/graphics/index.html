@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Salut :-)</title>
+</head>
+<body>
+	<p>Content: <span id = "content">Void</span></p>
+
+	<script>
+
+		let content = nodecg.Replicant('content')
+
+		content.value = 'Hello world |->#:::::::::::::::*%*°'
+
+		content.on('change', (newValue, oldValue) => {
+			document.getElementById('content').textContent = newValue
+		})
+		
+		nodecg.log.info('Here\'s an example of using NodeCG\'s logging API!')
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+    "idGraphic": "conf.idGraphic",
+    "routes": [{
+        "name": "basic",
+        "doc": "logo and next",
+        "pages": [{
+            "name": "basic",
+            "actions": ["run", "stop"],
+            "template": null,
+            "graphics": [{
+                "name": "logo",
+                "template": {
+                    "position": {
+                        "doc": "The position of a element",
+                        "type": "object",
+                        "required": false,
+                        "shape": {
+                            "top": {
+                                "type": "Number",
+                                "min": 0,
+                                "max": 100,
+                                "default": 50
+                            },
+                            "bottom": {
+                                "type": "float-percent"
+                            },
+                            "left": {
+                                "type": "float-percent"
+                            },
+                            "right": {
+                                "type":"float-percent", 
+                                "default": 24
+                            }
+                        },
+                        "default": {
+                            "top": 0,
+                            "right": 0
+                        },
+                        "path": "logo.main",
+                        "rename": "location"
+                    },
+                    "bdcr": {
+                        "type": "color",
+                        "rename": "background-color"
+                    },
+                    "width": {
+                        "type": "positive-number"
+                    },
+                    "height": {
+                        "type": "positive-number"
+                    }
+                }
+            },{
+                "name": "next",
+                "template": {
+                    
+                }
+            }]
+        }]
+    },
+    {
+        "name": "social-network",
+        "doc": "social-network messages",
+        "pages": [{
+            "name": "facebook",
+            "actions": ["run", "stop"]
+        }, {
+            "name": "twitter",
+            "actions": ["run", "stop"]
+        }, {
+            "name": "instagram",
+            "actions": ["run", "stop"]
+        }]
+    }]
+}
