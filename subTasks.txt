@@ -1,0 +1,26 @@
+Stories:
+	API nodecg for GV:
+		- Set up express.js module for create a server.
+		- Add a middleware for parsing request body in JSON.
+		- Know all bundles, pages and graphics name.
+		- For each html pages add a corresponding route. Their corresponding path are /{bundle}/{page}.html.
+		- During a receipt of a GV request
+			- Get corresponding mapping card to valide the request data. (If the data are falses send back a 400 http error : bad request ?)
+			- Get id graphic in request for load the corresponding html template.
+		- Test the api
+	Mapping card:
+		- Define a structure for the mapping card in JSON.
+		- Put it somewhere. (for the moment in my project but in the future in NFS)
+		- Fill it with the data provide by Jenny.
+		- Try convict module to know if it can validate data. If true, implement a function for validation.
+		- Write unit testing for the validation function with jest module.
+		
+	Mapping html:
+		- Try mustache.js module to know if it can mapping the data in a html page.
+		- Implement a function for mapping.
+		- For testing, write html templates and put them somewhere (for the moment in my project but in the future in NFS)
+		- Write unit testing for the mapping function with jest module.
+		
+	infrastructure:
+		- Train on Docker, aws and Jenkins.
+		- Set up Docker, aws and Jenkins environment.
